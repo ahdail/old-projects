@@ -1,0 +1,4 @@
+{head}
+{menu}
+{conteudo}
+{rodape}

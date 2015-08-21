@@ -1,0 +1,331 @@
+/* PÁGINAS INTERNAS */
+
+/* CONTEUDO */
+#divConteudo {
+	float: right;
+	padding: 0 10px;
+	padding-bottom: 20px;
+	width: 620px; /* 640 - 20 por causa do padding */
+	_width: 610px; /* 630 - 20 por causa do padding */
+}
+/* CONTEUDO > Barra de opções para o texto */
+#divConteudo #divOpcoes {
+	display: table;
+	width: 100%;
+	height: 35px;
+	font-size: 10px;
+	color: #767676;
+	border-top: 2px solid #CFF6F0;
+	border-bottom: 1px solid #E0E0E0;
+}
+#divConteudo #divOpcoes a {
+	text-decoration: none;
+	color: #767676;
+}
+#divConteudo #divOpcoes a:hover {
+	text-decoration: underline;
+}
+#divConteudo #divOpcoes #data {
+	position: relative;
+	top: 12px;
+	left: 5px;
+}
+#divConteudo #divOpcoes ul {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#divConteudo #divOpcoes ul li {
+	float: left;
+	margin: 4px 0;
+	padding: 7px 5px;
+	padding-left: 36px;
+}
+#divConteudo #divOpcoes ul li#imprimir {
+	background: url("../img/imprimir.gif") no-repeat 8px;
+	border-right: 1px solid #E0E0E0;
+}
+#divConteudo #divOpcoes ul li#comentar {
+	background: url("../img/comentar.gif") no-repeat 8px;
+	border-right: 1px solid #E0E0E0;
+}
+#divConteudo #divOpcoes ul li#enviar {
+	background: url("../img/enviar.gif") no-repeat 8px;
+}
+#divConteudo #divOpcoes ul li#tamanho {
+	margin-left: 5px;
+	padding: 2px 5px;
+	background: #E7EDF3;
+}
+#divConteudo #divOpcoes ul li#tamanho img {
+	vertical-align: middle;
+	border: 0;
+}
+/* CONTEUDO > Tags internas */
+#divConteudo h1.titulo {
+	margin-top: 0;
+	font-size: 20px;
+	font-weight: bold;
+	color: #008D79;
+}
+#divConteudo h1 {
+	font-size: 19px;
+	color: #03497A;
+}
+#divConteudo h2 {
+	font-size: 14px;
+	color: #464646;
+}
+#divConteudo h3 {
+	font-size: 14px;
+	color: #03497A;
+}
+#divConteudo p {
+	font-size: 12px;
+	line-height: 18px;
+	color: #464646;
+}
+#divConteudo address {
+	font-size: 12px;
+	font-style: normal;
+	line-height: 18px;
+	color: #464646;
+}
+#divConteudo a {
+	color: #008C79;
+	text-decoration: none;
+}
+#divConteudo a:hover {
+	text-decoration: underline;
+}
+#divConteudo a.fonte {
+	display: block;
+	padding: 8px 5px;
+	font-size: 11px;
+	text-decoration: none;
+	color: #008D79;
+	cursor: pointer;
+	background: #F6F6F6;
+}
+#divConteudo a.fonte:hover {
+	text-decoration: underline;
+}
+#divConteudo span.dic {
+	cursor: help;
+	border-bottom: 2px dotted #666666;
+}
+#divConteudo #autor {
+	display: none;
+	padding: 8px 5px;
+	font-size: 11px;
+	color: #008D79;
+	background: #F6F6F6;
+}
+#divConteudo #curriculo {
+	padding: 8px 5px;
+	font-size: 11px;
+	color: #008D79;
+	background: #F6F6F6;
+}
+/* CONTEUDO > Formulários */
+#divConteudo form span,
+#divConteudo form label,
+#divConteudo fieldset {
+	font-size: 12px;
+	color: #666666;
+}
+#divConteudo form label {
+	float: left;
+	display: block;
+	margin-top: 6px;
+	margin-right: 10px;
+}
+#divConteudo fieldset {
+	*position: relative;
+	padding: 15px;
+	*padding-top: 30px;
+	background: #F3F3F3;
+	border: 1px solid #DDDDDD;
+}
+#divConteudo fieldset legend {
+	*position: absolute;
+	*top: -10px;
+	*left: 5px;
+	padding: 5px;
+	font-size: 10px;
+	background: white;
+	border: 1px solid #DDDDDD;
+}
+#divConteudo fieldset.branco {
+	background: none;
+}
+#divConteudo form input[type=text],
+#divConteudo form input[type=password],
+#divConteudo form input[type=file],
+#divConteudo form textarea,
+#divConteudo form select {
+	margin: 3px 0;
+	color: #666666;
+	background: #FDFDFD;
+	border: 1px solid #DDDDDD;
+}
+#divConteudo form input[type=text]:focus,
+#divConteudo form input[type=password]:focus,
+#divConteudo form input[type=file]:focus,
+#divConteudo form textarea:focus,
+#divConteudo form select:focus {
+	border: 1px solid #00FFE6;
+}
+#divConteudo form input[disabled=disabled] {
+	color: #999999;
+}
+/*
+#divConteudo input[type=button] {
+	color: #FFFFFF;
+	background: #008D79;
+	border: 2px solid #E1F4FF;
+}
+*/
+/* CONTEUDO > Comentar e Indicar */
+#divConteudo #comentarForm, #divConteudo #indicarForm {
+	display: none;
+	margin: 10px;
+}
+#divConteudo .msgOk {
+	margin-bottom: 10px;
+	padding: 15px;
+	font-size: 12px;
+	color: #00A400;
+	background: #EEFCEE;
+	border: 1px solid #00A400;
+}
+#divConteudo .msgErro {
+	margin-bottom: 10px;
+	padding: 15px;
+	font-size: 12px;
+	color: #A40000;
+	background: #FBECEC;
+	border: 1px solid #A40000;
+}
+#divConteudo .msgNormal {
+	margin-bottom: 10px;
+	padding: 15px;
+	font-size: 12px;
+	color: #333333;
+	background: #F6F6F6;
+	border: 1px solid #333333;
+}
+/* CONTEUDO > Listagem de comentï¿½rios */
+#divConteudo ul.listComent li span {
+	font-size: 10px;
+	font-weight: bold;
+	color: #03497A;
+}
+#divConteudo ul.listComent a#todos {
+	display: block;
+	margin-top: 3px;
+	padding: 3px;
+	font-size: 10px;
+	text-align: right;
+	text-decoration: none;
+	color: #00497A;
+}
+#divConteudo ul.listComent a#todos:hover {
+	text-decoration: underline;
+}
+/* CONTEUDO > Coisas relacionadas */
+#divConteudo ul.relacionados {
+	margin: 0;
+	margin-top: 20px;
+	padding: 0;
+	list-style: none;
+}
+#divConteudo ul.relacionados h1 {
+	margin: 0;
+	padding: 4px 3px;
+	font-size: 17px;
+	font-weight: bold;
+	color: #000000;
+	border-bottom: 1px solid #E0E0E0;
+}
+#divConteudo ul.relacionados li {
+	padding: 4px 3px;
+	border-bottom: 1px solid #E0E0E0;
+}
+#divConteudo ul.relacionados li a {
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #03497A;
+	list-style: none;
+}
+#divConteudo ul.relacionados li a:hover {
+	text-decoration: underline;
+}
+#divConteudo ul.relacionados li a span {
+	font-size: 10px;
+	font-weight: normal;
+}
+/* CONTEUDO > Listagens de todas as notï¿½cias, artigos etc. */
+#divConteudo div.divisa {
+	border-top: 2px solid #CFF6F0;
+}
+#divConteudo ul.listagem {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#divConteudo ul.listagem li {
+	display: table;
+	width: 99%;
+	padding: 4px 3px;
+	border-bottom: 1px solid #E0E0E0;
+}
+#divConteudo ul.listagem li h1 {
+	margin: 5px 0;
+	font-size: 13px;
+	font-weight: bold;
+}
+#divConteudo ul.listagem li p {
+	margin: 0;
+}
+#divConteudo ul.listagem li p.data {
+	float: right;
+	margin-left: 10px;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: right;
+	color: #B0B0B0;
+}
+#divConteudo ul.listagem li h1 a {
+	text-decoration: none;
+	color: #03497A;
+}
+#divConteudo ul.listagem li p a {
+	text-decoration: none;
+	color: #464646;
+}
+#divConteudo ul.listagem li a:hover {
+	text-decoration: underline;
+}
+#divConteudo #star {
+	color: #A40000;
+}
+#divConteudo .assinatura {
+	font-size: 11px;
+	font-weight: normal;
+	color: #B0B0B0;
+}
+#maisNum {
+	font-size: 12px;
+	text-decoration: none;
+}
+#maisNum a {
+	text-decoration: none;
+}
+#maisNum a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
+/* /CONTEUDO */

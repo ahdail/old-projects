@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/EquipeWeb/!svn/ver/3/trunk/classecontabil/site/addons/imagelibrary
+END
+config.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/EquipeWeb/!svn/ver/3/trunk/classecontabil/site/addons/imagelibrary/config.inc.php
+END
+changelog
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/EquipeWeb/!svn/ver/3/trunk/classecontabil/site/addons/imagelibrary/changelog
+END
+select_image.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/EquipeWeb/!svn/ver/3/trunk/classecontabil/site/addons/imagelibrary/select_image.php
+END
+insert_image.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/EquipeWeb/!svn/ver/3/trunk/classecontabil/site/addons/imagelibrary/insert_image.php
+END

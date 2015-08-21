@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cu3er>
+	<settings>
+	    <auto_play>
+           <defaults symbol="circular"/>
+           <tweenIn x="895" y="45" width="30" height="30" tint="0x20282e" alpha="0.5"/>
+           <tweenOver alpha="1"/>
+        </auto_play>
+		
+    	<prev_button>
+			<defaults round_corners="5,5,5,5"/>
+			<tweenOver tint="0xFFFFFF" scaleX="1.1" scaleY="1.1"/>
+			<tweenOut tint="0x000000" />
+		</prev_button>
+		
+    	<prev_symbol>
+			<tweenOver tint="0x000000" />			
+		</prev_symbol>
+		
+		<description>
+         <defaults round_corners="10, 10, 10, 10" heading_text_size="22" heading_text_color="0xffffff" paragraph_text_size="13" paragraph_text_color="0xe1e1e1"/>
+         <tweenIn x="200" y="220" alpha="0.70"/>
+         <tweenOver alpha="0.3"/>
+        </description>
+		
+    	<next_button>
+			<defaults round_corners="7,7,7,7"/>			
+			<tweenOver tint="0xFFFFFF"  scaleX="1.1" scaleY="1.1"/>
+			<tweenOut tint="0x000000" />
+		</next_button>
+		
+    	<next_symbol>
+			<tweenOver tint="0x000000" />
+		</next_symbol>	
+			
+	</settings>    
+
+	<slides>
+	
+        <slide>
+            <url>images/image1.jpg</url>
+			  <link target="_blank">http://www.design3edge.com</link>
+        </slide>
+		<!-- changing transition between first & second slide -->
+<transition num="6" slicing="vertical" direction="up" shader="flat" delay="0.05" z_multiplier="4" />
+        <slide>
+       		<url>images/image2.jpg</url>
+
+       <link target="_blank">http://www.design3edge.com</link>
+
+        </slide>		
+		<!-- changing transition between second & third slide -->
+<transition num="6" slicing="vertical" direction="up" shader="flat" delay="0.05" z_multiplier="4" />
+		<slide>
+            <url>images/image3.jpg</url>
+
+       <link target="_blank">http://www.design3edge.com</link>
+
+        </slide>
+        <!-- transitions properties defined in transitions template -->
+		<transition num="6" slicing="vertical" direction="up" shader="flat" delay="0.05" z_multiplier="4" />
+		<slide>
+       		<url>images/image4.jpg</url>
+
+       <link target="_blank">http://www.design3edge.com</link>
+
+        </slide>
+		<transition num="6" slicing="vertical" direction="up" shader="flat" delay="0.05" z_multiplier="4" />
+        <slide>
+       		<url>images/image5.jpg</url>
+
+       <link target="_blank">http://www.design3edge.com</link>
+
+        </slide>
+				
+	</slides>
+</cu3er>
+

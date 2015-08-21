@@ -1,0 +1,349 @@
+/* PÁGINA INICIAL */
+
+/* CONTEUDO */
+#divConteudo {
+	float: right;
+	padding: 0;
+	padding-bottom: 20px;
+	width: 640px;
+	_width: 630px;
+}
+#divConteudo p {
+	margin: 0;
+	padding: 0;
+	color: #666666;
+}
+#divConteudo ul {
+	margin: 8px;
+	margin-top: 5px;
+	padding: 0;
+	list-style: none;
+}
+#divConteudo ul li {
+	padding: 7px 2px;
+	background: url("../img/pontilhadoh.gif") repeat-x top;
+}
+#divConteudo ul li#destaque {
+	display: table;
+	margin: 0 -10px;
+	padding: 10px;
+	width: 100%;
+	_width: 98%;
+	background: #EAEAEA;
+}
+#divConteudo ul li#destaque img {
+	margin-right: 10px;
+}
+#divConteudo #divTitulo {
+	display: table;
+	width: 100%;
+	height: 27px;
+}
+#divConteudo #divTitulo * {
+	margin-top: 5px;
+	_margin-top: 3px;
+}
+#divConteudo #divTitulo p {
+	float: right;
+	margin-top: 8px;
+	font-size: 11px;
+}
+#divConteudo #divTitulo h1 {
+	float: left;
+	margin-left: 12px;
+	_margin-left: 6px;
+	font-size: 15px;
+}
+#divConteudo #divTitulo a#rss {
+	float: right;
+	margin: 0;
+	margin-right: 10px;
+	_margin-right: 5px;
+	font-size: 9px;
+	text-decoration: none;
+}
+#divConteudo #divTitulo a#rss img {
+	margin-left: 5px;
+	vertical-align: -50%;
+	border: none;
+}
+#divConteudo #divTitulo select {
+	float: right;
+	margin-left: 5px;
+	width: 100px;
+	height: 20px;
+	color: #6F6D6D;
+	background: #FFFFFF;
+	border: 1px solid #EAEAEA;
+}
+#divConteudo #divTitulo select option {
+	margin: 0;
+}
+#divConteudo #divMais {
+	padding: 0 12px;
+	height: 20px;
+	text-align: center;
+	border-top: 1px dotted #DDDDDD;
+}
+#divConteudo #divMais a {
+	padding-top: 4px;
+	font-size: 9px;
+	text-decoration: none;
+}
+#divConteudo #divMais a:hover {
+	text-decoration: underline;
+}
+/* CONTEUDO > Full Banner */
+#divConteudo #divBannerFull {
+	float: left;
+	display: table;
+	width: 479px;
+	height: 95px;
+	_height: 100px;
+}
+#divConteudo #divBannerFull * {
+	margin-top: 8px;
+}
+/* CONTEUDO > Coluna da esquerda */
+#divConteudo #divColunaEsq {
+	float: left;
+	width: 46%;
+}
+#divConteudo #divColunaEsq p {
+	font-size: 11px;
+}
+#divConteudo #divColunaEsq a {
+	display: block;
+	text-decoration: none;
+	color: #333333;
+}
+#divConteudo #divColunaEsq a:hover {
+	text-decoration: underline;
+}
+#divConteudo #divColunaEsq #divMais a {
+	color: #008C79;
+}
+#divConteudo #divColunaEsq h2 {
+	margin: 0;
+	margin-bottom: 7px;
+	padding: 0;
+	font-size: 15px;
+	vertical-align: middle;
+	color: #00497A;
+}
+#divConteudo #divColunaEsq h3 {
+	margin: 0;
+	margin-bottom: 3px;
+	padding: 0;
+	font-size: 13px;
+	color: #00497A;
+}
+#divConteudo #divColunaEsq h3 span {
+	font-weight: normal;
+	font-size: 11px;
+	color: #666666;
+}
+/* CONTEUDO > Coluna da esquerda > Quadros */
+#divConteudo .quadroEsq {
+	margin-bottom: 10px;
+	width: 100%;
+	border-right: 1px solid #EDEDED;
+}
+#divConteudo .quadroEsq #divTitulo {
+	background: url("../img/tituloFundoAzul.gif") repeat-x;
+}
+#divConteudo .quadroEsq #divTitulo h1 {
+	color: #FFFFFF;
+}
+#divConteudo .quadroEsq #divTitulo p {
+	color: #B0E1FF;
+}
+#divConteudo .quadroEsq #divTitulo a#rss {
+	color: #FFFFFF;
+}
+#divConteudo .quadroEsq img {
+	border: 0;
+}
+
+/* CONTEUDO > Coluna da direita */
+#divConteudo #divColunaDir {
+	float: right;
+	/* width: 326px; */
+	width: 52%;
+}
+#divConteudo #divColunaDir p {
+	font-size: 11px;
+}
+#divConteudo #divColunaDir a {
+	display: block;
+	text-decoration: none;
+	color: #333333;
+}
+#divConteudo #divColunaDir a:hover {
+	text-decoration: underline;
+}
+#divConteudo #divColunaDir #divMais a {
+	color: #008C79;
+}
+#divConteudo #divColunaDir h3 {
+	margin: 0;
+	margin-bottom: 3px;
+	padding: 0;
+	font-size: 13px;
+	color: #00497A;
+}
+/* CONTEUDO > Coluna da direita > Quadros */
+#divConteudo .quadroDir {
+	margin-bottom: 10px;
+	width: 100%;
+	border-right: 1px solid #EDEDED;
+}
+#divConteudo .quadroDir #divTitulo {
+	background: url("../img/tituloFundoVerde.gif") repeat-x;
+}
+#divConteudo .quadroDir #divTitulo h1 {
+	color: #FFFFFF;
+}
+#divConteudo .quadroDir ul li {
+	background: none;
+}
+/* CONTEUDO > Vï¿½deos */
+#divConteudo #divVideos {
+	display: table;
+	margin-bottom: 10px;
+	width: 100%;
+}
+#divConteudo #divVideos #divTitulo {
+	margin-bottom: 10px;
+	background: url("../img/tituloFundoVerde.gif") repeat-x;
+}
+#divConteudo #divVideos #divTitulo h1 {
+	color: #00564A;
+}
+#divConteudo #divVideos #divTitulo p {
+	color: #748B02;
+}
+#divConteudo #divVideos #divTitulo a#rss {
+	color: #666666;
+}
+#divConteudo #divVideos #divTela {
+	float: left;
+	padding-bottom: 3px;
+	width: 112px;
+	height: 160px;
+	text-align: center;
+	background: #EEECEC;
+}
+#divConteudo #divVideos #divTela a#legenda {
+	display: block;
+	margin: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #666666;
+}
+#divConteudo #divVideos #divTela a#legenda:hover {
+	text-decoration: underline;
+}
+#divConteudo #divVideos #divMais {
+	background: #F6FCD8;
+}
+#divConteudo #divVideos p {
+	font-size: 11px;
+}
+#divConteudo #divVideos ul {
+	display: table;
+	margin: 0;
+	padding: 0;
+	width: 210px;
+	list-style: none;
+}
+#divConteudo #divVideos ul li {
+	margin: 0;
+	padding: 5px 0;
+	_padding-top: 0;
+	font-size: 12px;
+	background: url("../img/pontilhadoh.gif") repeat-x bottom;
+}
+#divConteudo #divVideos ul li a {
+	display: block;
+	padding-left: 11px;
+	padding-right: 20px;
+	height: 35px;
+	text-decoration: none;
+	color: #666666;
+}
+#divConteudo #divVideos ul li a:hover {
+	text-decoration: underline;
+}
+#divConteudo #divVideos ul li a.um {
+	background: url("../img/videos1.gif") no-repeat right;
+}
+#divConteudo #divVideos ul li a.dois {
+	background: url("../img/videos2.gif") no-repeat right;
+}
+#divConteudo #divVideos ul li a.tres {
+	background: url("../img/videos3.gif") no-repeat right;
+}
+#divConteudo #divVideos ul li a.quatro {
+	background: url("../img/videos4.gif") no-repeat right;
+}
+/* CONTEUDO > Podclasse */
+#divConteudo #divPodclasse {
+	margin-bottom: 2px;
+	width: 100%;
+	height: 285px;
+}
+#divConteudo #divPodclasse #divTitulo {
+	margin-bottom: 4px;
+	_margin-bottom: 8px;
+	background: url("../img/tituloFundoVerde.gif") repeat-x;
+}
+#divConteudo #divPodclasse #divTitulo h1 {
+	color: #015658;
+}
+#divConteudo #divPodclasse #divTitulo p {
+	color: #05696C;
+}
+#divConteudo #divPodclasse #divTitulo a#rss {
+	color: #666666;
+}
+#divConteudo #divPodclasse #divMais {
+	background: #BDF8FA;
+}
+#divConteudo #divPodclasse p {
+	font-size: 10px;
+}
+#divConteudo #divPodclasse p a {
+	color: #008474;
+	text-decoration: none;
+}
+#divConteudo #divPodclasse p a:hover {
+	text-decoration: underline;
+}
+#divConteudo #divPodclasse ul {
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+	list-style: none;
+}
+#divConteudo #divPodclasse ul li {
+	padding: 5px;
+	border-top: 1px solid #E0E0E0;
+}
+#divConteudo #divPodclasse ul li b {
+	margin: 0;
+	font-size: 10px;
+	color: #004879;
+}
+#divConteudo #divPodclasse ul li p {
+	margin-bottom: 5px;
+	font-size: 10px;
+}
+#divConteudo #divPodclasse ul li img {
+	border: none;
+}
+#divConteudo #divPodclasse ul li img#comentar {
+	margin-left: 10px;
+}
+/* /CONTEUDO */

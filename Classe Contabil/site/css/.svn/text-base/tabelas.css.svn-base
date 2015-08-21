@@ -1,0 +1,50 @@
+/* TABELAS */
+/* Tabela Padrão */
+#tabelaAdm {
+	width: 100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #6A7576;
+	text-align: left;
+	background: #FFFFFF;
+}
+#tabelaAdm label {
+	font-size: 11px;
+	font-weight: bold;
+	color: #6A7576;
+	padding-left: 5px;
+}
+#tabelaAdm input, select, textarea{
+	background-color: #F3FCFF;
+	border: 1px solid #55AEB4;
+	color: #6A7576;
+}
+#tabelaAdm thead th {
+	color: #FFFFFF;
+	background-color: #06B2BD;
+	font-size: 13px;
+	font-weight: bold;
+	height: 25px;
+	padding: 0 10px;
+	text-align: left;
+}
+#tabelaAdm thead td {
+	color: #FFFFFF;
+	background-color: #06B2BD;
+	padding: 0 10px;
+	height: 25px;
+	text-align: left;
+}
+#tabelaAdm tbody td {
+	padding: 0 10px;
+	height: 25px;
+}
+#tabelaAdm .cor1 {
+	background-color: #F3FCFF;
+}
+
+#tabelaAdm .cor2 {
+	background-color: #E1F8FF;
+}
+
+/* /TABELAS */

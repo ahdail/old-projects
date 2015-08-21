@@ -1,0 +1,116 @@
+<?php
+class ComentarioNoticia extends Controller {
+
+	// É necessario executar o controlador da classe Controller.
+	function __construct()
+	{
+		// Executa a função construtora da classe Controller
+		parent::Controller();	
+		
+		// Carregar aos Helpers de Form, URL e DATE e as Library de validação
+		$this->load->helper(array('form', 'url','date'));
+		$this->load->library ( array ('form_validation', 'session', 'pagination') );
+		
+		$this->load->model('admin/comentarionoticiamodel',"ComentarioNoticiaModel");
+		$this->load->model('admin/auditoriamodel',"AuditoriaModel");
+	}
+	
+	// A ação index é iniciada quando nenhuma ação for passada na URL
+	function index()
+	{
+		ComentarioNoticia::listar();
+	}
+	
+	function opcao($id, $tipo) 
+	{
+		// Se for  1 o campo exibir da tabela Banner será atualizado, com o valor preenchido da variável $tipo
+		$session_login = $this->session->userdata('login');
+			$autorizado = array ('autorizado' => $tipo );
+			$log = "($session_login) [COMENTARIO NOTÍCIA] Alterou o  comentário notícia autorização para ($autorizado) do id ($id)";
+		$auditoria = array ('log' => $log, 'dataHora' => date ( "Y-m-d h:i:s", now () ) );
+		$this->AuditoriaModel->insert ($auditoria);
+		$this->ComentarioNoticiaModel->opcao($id, $autorizado);
+		ComentarioNoticia::listar();
+	}
+	
+	function listar($start = 0) 
+	{
+		// Faz o select
+        $config = array(
+    		'base_url' => site_url('/admin/comentarionoticia/listar/'),
+    		'per_page' => 10,
+    		'total_rows' => $this->ComentarioNoticiaModel->getTotal(),
+    		'uri_segment' => 4,
+    		'first_link' => 'Primeira',
+    		'last_link' => 'Última'
+    	);
+                
+        $query = $this->ComentarioNoticiaModel->exibir($start, $config['per_page']);
+        
+        // Inciializa a paginacao
+        
+        $this->pagination->initialize($config);
+        
+        
+        // cria links para paginação
+        $comentarioNoticia['pag'] = $this->pagination->create_links();
+		
+        $comentarioNoticia['comentarioNoticia'] = $query->result_array();
+        $this->load->view('admin/comentarionoticialistar',$comentarioNoticia);
+	}
+	
+	function detalhar($id)
+	{
+		if ($id) {
+			// Faz o select
+			$comentarioNoticia['row'] = $this->ComentarioNoticiaModel->detalhar($id);
+		}
+		$this->load->view('admin/comentarionoticiamanter',$comentarioNoticia);
+	}
+	
+	function deletar($id)
+	{
+		// Grava o Log 
+		$session_login = $this->session->userdata('login');
+		$log = "($session_login) [COMENTÁRIO NOTÍCIA] Deletou Comentario Notícia do id ($id)";
+		$auditoria = array('log' => $log, 'dataHora' => date("Y-m-d h:i:s", now()));
+		$this->AuditoriaModel->insert($auditoria);
+		$this->ComentarioNoticiaModel->deletar($id);
+		
+		ComentarioNoticia::listar();
+	}
+	
+	function manter()
+	{
+
+		// Realiza a validação dos campos do Form
+		$this->form_validation->set_rules ( 'comentario', 'Comentário', 'required' );
+		
+		// Carregar os dados passado através do formulário
+		$comentarioNoticia = array(
+			'autorizado' => $this->input->post('autorizado'),
+			'comentario' => $this->input->post('comentario'),
+		);
+		
+		// Carrega todos os dados num array para serem editados
+		$comentarioNoticiaPost['row'] = $_POST;
+		
+		// Após a validação dos campos, e dependendo do resultado, é feito um redirecionamento 
+		if ($this->form_validation->run() == FALSE){
+			$this->load->view('admin/comentarioNoticiaManter',$comentarioPost);
+		} else {
+			// Edição
+			$session_login = $this->session->userdata('login');
+			$nomeComentarioNoticia = $this->input->post('comentario');
+			$idComentarioNoticia = $this->input->post('idComentario');
+				// Grava o Log 
+				$log = "($session_login) [COMENTÁRIO NOTÍCIA] Alterou Comentário notícia ($nomeComentarioNoticia) do id ($idComentarioNoticia)";
+				$auditoria = array('log' => $log, 'dataHora' => date("Y-m-d h:i:s", now()));
+				$this->AuditoriaModel->insert($auditoria);
+				$this->ComentarioNoticiaModel->update($idComentarioNoticia,$comentarioNoticia);
+			// Adição
+			ComentarioNoticia::listar();
+		}
+	}
+}
+?>

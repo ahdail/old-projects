@@ -1,0 +1,381 @@
+@charset "iso-8859-1";
+body  {
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: 58595b;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 100%;
+	background-color: #5C0D10;
+	background-image: url(../images/bg_centro_01.jpg);
+}
+.direito #container {
+	width: 960px; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px none #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	background-color: #e3d7bb;
+	background-image: url(../images/bg_babayaga.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 240px;
+} 
+.direito #header {
+	padding: 0;
+	height: 240px;
+	background-image: url(../images/menu_babayaga.jpg);
+} 
+.direito #header h1 {
+	margin: 0;
+	padding: 0px;
+	background-color: #FFF;
+}
+
+#header a:visited  {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+#header a:hover {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color:  #461214;
+	background-color: #E3D7BB ;
+}
+
+
+
+/* Tips for sidebar1:
+1. Since we are working in relative units, it's best not to use padding on the sidebar. It will be added to the overall width for standards compliant browsers creating an unknown actual width. 
+2. Since em units are used for the sidebar value, be aware that its width will vary with different default text sizes.
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".direito #sidebar1 p" rule.
+*/
+.direito #sidebar1 {
+	float: right;
+	width: 500px;
+	padding-right: 0;
+	padding-bottom: 0px;
+	padding-left: 0;
+	margin-right: 50px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #5F0D11;
+}
+.twoColHybRtHdr #sidebar1 p , 
+.direito #sidebar1 h3{
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+	top: 0px;
+	margin-top: 0px;
+}
+.direito #footer {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 10px;
+	color: #B79851;
+	padding-top: 0;
+	padding-right: 90px;
+	padding-bottom: 0;
+	padding-left: 10px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CFBB8B;
+	height: 50px;
+} 
+.direito #footer p {
+	margin: 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+	left: 0px;
+	right: 90px;
+	padding-top: 10px;
+	padding-right: 0;
+	padding-bottom: 10px;
+	padding-left: 90;
+	text-align: center;
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.Titulos {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #5F0D11;
+	font-style: italic;
+}
+.textonormal {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #461214;
+	font-weight: normal;
+}
+.texto_bold_italic {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-style: italic;
+	color: #600E12;
+	font-weight: bold;
+}
+.formulario_contato {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #5C0D12;
+	background-color: #DBD0B4;
+	border: 0px;
+	width: 380px;
+	font-weight: normal;
+	font-style: normal;
+}
+.direito #container #mainContent table {
+	text-align: center;
+}
+a:link {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #735759;
+	text-decoration: none;
+}
+a:visited {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #333;
+}
+a:hover {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #E3D7BB;
+	background-color: #610C11;
+}
+a:active {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #9C5456;
+	background-color: #CCB682;
+}
+.direito #noticias_home {
+	width: 200px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	float: left;
+	position: relative;
+	margin-left: 46px;
+}
+.direito #perfil_home {
+	width: 280px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	float: left;
+	position: relative;
+	margin-left: 20px;
+}
+.direito #video_home {
+	width: 164px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	float: left;
+	position: relative;
+	margin-left: 20px;
+}
+.direito #eventos_home {
+	width: 164px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	float: left;
+	position: relative;
+	margin-left: 20px;
+}
+.direito #banner {
+	width: 868px;
+	float: left;
+	position: relative;
+	margin-left: 46px;
+	margin-bottom: 20px;
+	height: 267px;
+	text-align: right;
+}
+.TitulosGrandes {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+	color: #5F0D11;
+}
+.direito #fotos_ {
+	width: 420px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+}
+.direito #menu_colecoes {
+	width: 164px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	float: left;
+	position: relative;
+	margin-left: 25px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #B0A27B;
+	height: 400px;
+}
+.direito #areadefoto {
+	width: 260px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	float: left;
+	position: relative;
+	margin-left: 46px;
+}
+.Titulos_colecoes {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #E3D7BB;
+	padding: 10px;
+	background-color: #471315;
+	height: 18px;
+	width: auto;
+}
+.foto {
+	padding: 5px;
+}
+.direito #areanoticias {
+	width: 600px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+}
+.foto_noticias {
+	margin-bottom: 10px;
+	margin-right: 10px;
+
+}
+.direito #galeriadevideos   {
+	width: 460px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	float: left;
+	position: relative;
+	margin-left: 25px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #B0A27B;
+	height: auto;
+}
+#foto_galeria_videos {
+	height: 100px;
+	width: 210px;
+	float: left;
+	padding-right: 15px;
+}
+#paginacao_ {
+	float: left;
+	padding-right: 15px;
+}
+.direito #eventos_arealizar {
+	width: 580px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	float: left;
+	position: relative;
+	margin-left: 25px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #B0A27B;
+	height: auto;
+}
+.direito #faleconosco {
+	width: 430px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+}
+.direito #faleconosco_diret {
+	width: 440px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	float: left;
+	position: relative;
+	margin-left: 25px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #B0A27B;
+	height: auto;
+}
+.formulario {
+	background-color: #DBD0B4;
+	width: 420px;
+	border: 1px solid #5B0C0F;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #A4171F;
+}
+.marcababayaga {
+	height: 70px;
+	width: 300px;
+	margin-top: 70px;
+	float: left;
+}
+.menu_babayaga {
+	height: 150px;
+	width: 550px;
+	float: left;
+	position: relative;
+	clear: right;
+	margin-top: 25px;
+	margin-left: 20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13px;
+	color: #E2D7BB;
+}
+.formulario_news {
+	background-color: #B2A78B;
+	width: 180px;
+	border: 1px solid #5B0C0F;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #5E0E11;
+	padding-left: 5px;
+}
+.msgErro {
+	/* display: none; */
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding-left:50px;
+	padding-top:10px;
+	padding-bottom:10px;
+	width: 350px;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: left;
+	color: #AA0000;
+	border: 2px solid #AA0000;
+	background-color:#ffffff; 
+	background-position: 15px center;
+}
+.msgOk {
+	/* display: none; */
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding-left:50px;
+	padding-top:10px;
+	padding-bottom:10px;
+	width: 400px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	color: #336600;
+	border: 2px solid #336600;
+	background-color:#ffffff; 
+	background-position: 15px center;
+}

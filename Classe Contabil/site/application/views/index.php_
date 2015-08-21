@@ -1,0 +1,338 @@
+<?php include("inicio.inc.php"); ?>
+<link rel="stylesheet" type="text/css" href="<?= base_url()?>site/css/inicial.css" />
+<!-- CONTEUDO -->
+<div id="divConteudo">
+	<div id="divColunaEsq">
+		<!-- CONTEUDO > Notï¿½cias -->
+		<div id="divNoticias">
+			<div id="divTitulo">
+				<h1>Notícias</h1>
+				<a id="rss" href="#"><img src="<?= base_url()?>site/img/rss.gif" /> RSS</a>
+				<select onchange="alternaNoticias();">
+					<option selected="selected">últimas</option>
+					<option>Mais acessadas</option> 
+				</select>
+				<p>filtrar</p>
+			</div>
+			<ul id="notUltimas">
+				<!-- Notícia Destaque -->
+				<li id="destaque">
+				<?php 
+				if ($noticiaDestaque){
+					foreach ($noticiaDestaque as $row){
+						$dataNoticiaPrincipal = sqlToDateDiaMes($row['data']);
+						$caminho = base_url()."site/banners/".$row['icoDestaque'];
+						echo "
+							<a href=\"noticias/ver/$row[id]\">
+								<div class=\"esq\">
+									<img src=\"$caminho\" width=76 height=71/>
+								</div>
+								<div>
+									<h3>$row[titulo]</h3>
+									<p>$row[resumo]</p>
+								</div>
+							</a>
+						";
+					}
+				}
+				?>
+				</li>
+				<!--  -->
+				<!-- As trï¿½s ï¿½ltimas notï¿½cias cadastradas -->
+				<?php 
+				if ($noticiasPrincipais){
+					foreach ($noticiasPrincipais as $row){
+						$dataNoticiaPrincipal = sqlToDateDiaMes($row['data']);
+						echo "
+							<li>
+								<a href=\"noticias/ver/$row[id]\">
+									<h3><span>$dataNoticiaPrincipal</span> $row[titulo]</h3>
+									<p>$row[resumo]</p>
+								</a>
+							</li>
+						";
+					}
+				}
+				?>
+				<!--  -->
+			</ul>
+			<ul id="notMaisAcessados" style="display: none;">
+				<?php 
+				if ($noticiaAcessos){
+					foreach ($noticiaAcessos as $row){
+						$dataNoticiaAcessos = sqlToDateDiaMes($row['data']);
+						echo "
+							<li>
+								<a href=\"noticias/ver/$row[id]\">
+									<h3><span>$dataNoticiaAcessos</span> $row[titulo]</h3>
+									<p>$row[resumo]</p>
+								</a>
+							</li>
+						";
+					}
+				}
+				?>
+			</ul>
+			<div id="divMais">
+				<a class="dir" href="noticias">Mais notícias (+)</a>
+			</div>
+		</div>
+		<!-- CONTEUDO > Artigos -->
+		<div id="divArtigos">
+			<div id="divTitulo">
+				<h1>Artigos</h1>
+				<a id="rss" href="#"><img src="<?= base_url()?>site/img/rss.gif" /> RSS</a>
+				<select onchange="alternaArtigos();">
+					<option selected="selected" >últimas</option>
+					<option>Mais Acessadas</option>  
+				</select>
+				<p>filtrar</p>
+			</div>
+			<ul id="artUltimas">
+				<li id="destaque">
+				<!-- Artigo Destaque -->
+				<?php 
+				if ($artigoDestaque){
+					foreach ($artigoDestaque as $row){
+						echo "
+							<a href=\"artigos/ver/$row[id]\">
+								<div>
+									<h3>$row[titulo]</h3>
+									<p>$row[resumo]</p>
+								</div>
+							</a>
+						";
+					}
+				}
+				?>
+				<!--  -->
+				</li>
+				<!-- Os trï¿½s ï¿½ltimos artigos cadastrados -->
+				<?php 
+				if ($artigosPrincipais){
+					foreach ($artigosPrincipais as $row){
+						$dataArtigosPrincipais = sqlToDateDiaMes($row['data']);
+						echo "
+							<li>
+								<a href=\"artigos/ver/$row[id]\">
+									<h3><span>$dataArtigosPrincipais</span> $row[titulo]</h3>
+									<p>$row[resumo]</p>
+								</a>
+							</li>
+						";
+					}
+				}
+				?>
+				<!--  -->
+			</ul>
+			<ul id="artMaisAcessados" style="display: none;">
+				<?php 
+				if ($artigoAcessos){
+					foreach ($artigoAcessos as $row){
+						$dataArtigoAcessos = sqlToDateDiaMes($row['data']);
+						echo "
+							<li>
+								<a href=\"noticias/ver/$row[id]\">
+									<h3><span>$dataArtigoAcessos</span> $row[titulo]</h3>
+									<p>$row[resumo]</p>
+								</a>
+							</li>
+						";
+					}
+				}
+				?>
+			</ul>
+			<div id="divMais">
+				<a class="esq" href="#">Articulistas</a>
+				<a class="dir" href="artigos">Mais artigos (+)</a>
+				<a href="#">Publique seu artigo</a>
+			</div>
+		</div>
+		<!-- CONTEUDO > Juï¿½zo diï¿½rio -->
+		<div id="divJuizo">
+			<div id="divTitulo">
+				<h1>Juízo Diário</h1>
+			</div>
+			<ul>
+			<?php 
+				if ($juizoDestaque){
+					foreach ($juizoDestaque as $row){
+						echo "
+							<li>
+								<a href=\"artigos/ver/$row[id]\">
+									<h3>$row[titulo]</h3>
+									<p>$row[resumo]</p>
+								</a>
+							</li>
+						";
+					}
+				}
+				?>
+			</ul>
+			<div id="divMais">
+				<a class="dir" href="artigos/juizo">Ver todos (+)</a>
+			</div>
+		</div>
+		<!-- CONTEUDO > Direito empresarial -->
+		<div id="divDireito">
+			<div id="divTitulo">
+				<h1>Direito Empresarial</h1>
+			</div>
+			<ul>
+			
+			<?php 
+				if ($direitoDestaque){
+					foreach ($direitoDestaque as $row){
+						echo "
+							<li>
+								<a href=\"artigos/ver/$row[id]\">
+									<h3>$row[titulo]</h3>
+									<p>$row[resumo]</p>
+								</a>
+							</li>
+						";
+					}
+				}
+				?>
+			</ul>
+			<div id="divMais">
+				<a class="dir" href="artigos/direito">Ver todos (+)</a>
+			</div>
+		</div>
+	</div>
+	<div id="divColunaDir">
+		<!-- CONTEUDO > Calendario -->
+		<div id="divCalendario">
+			<div id="calendario">
+				<img src="<?= base_url()?>site/img/calendario.gif" />
+			</div>	
+			<div id="eventos">
+				<div id="divTitulo">
+					<h1>Eventos</h1>
+				</div>
+				<p><span>15/11</span> - Reunião com a diretoria geral da nacional</p>
+				<p><span>16/11</span> - Como auxiliar os colaboradores ao sucesso</p>
+				<p><span>17/11</span> - A importância do Classe Contábil</p>
+				<p><span>18/11</span> - Ser ou não ser? Eis a questão</p>
+				</p>
+			</div>
+		</div>
+		<!-- CONTEUDO > Videos -->
+		<div id="divVideos">
+			<div id="divTitulo">
+				<h1>Vídeos</h1>
+				<a id="rss" href="#"><img src="<?= base_url()?>site/img/rss.gif" /> RSS</a>
+				<select onchange="alternaVideos();">
+					<option selected="selected">Últimas</option>
+					<option>Mais acessados</option> 
+				</select>
+				<p>filtrar</p>
+			</div>
+			
+			<div id="divTela" >
+				<?php if ($videoDestaque) {	?>	
+					<img src="<?= base_url()?>site/img/videoImagem.jpg" />
+					<p><a id="legenda" href="#"><b><?=$videoDestaque['titulo']?></a></p>
+			</div>
+			<ul id="videoUltimas">
+				<?php }
+					if ($video) {
+						$classe = array('um','dois','tres','quatro');
+						$i = 0;
+						foreach ($video as $rowVideo) {
+				?>
+					<li><a class="<?php echo $classe[$i]?>" href="<?=base_url()?>video/ver/<?=$rowVideo['id']?>"><?=$rowVideo['titulo']?></a></li>
+				<?php 	
+						$i++;		
+						}
+					}
+				?>
+			</ul>
+			<ul id="videoMaisAcessados">
+				<?php 
+					if ($videoAcessados) {
+						$classe = array('um','dois','tres','quatro');
+						$i = 0;
+						foreach ($videoAcessados as $rowVideo) {
+				?>
+					<li><a class="<?php echo $classe[$i]?>" href="<?=base_url()?>video/ver/<?=$rowVideo['id']?>"><?=$rowVideo['titulo']?></a></li>
+				<?php 	
+						$i++;		
+						}
+					}
+				?>
+			</ul>
+		</div>
+		<br><br><br><br><br><br><br><br><br><br><br>
+		<div id="divMais">
+			<a class="esq" href="#">Sugira novos temas e vídeos</a>
+			<a class="dir" href="#">Mais vídeos (+)</a>
+		</div>
+		<!-- CONTEUDO > Podclasse -->
+		<br>
+		<div id="divPodclasse">
+			<div id="divTitulo">
+				<h1>PodClasse</h1>
+				<a id="rss" href="#"><img src="<?= base_url()?>site/img/rss.gif" /> RSS</a>
+				<select>
+					<option>últimos</option>
+					<option>primeiras</option> 
+				</select>
+				<p>filtrar</p>
+			</div>
+			<p><a href="#">Como ouvir</a> | <a href="#">RSS Feed?</a></p>
+			<ul>
+				<li>
+					<p><b>Direito Societ?rio</b> - idade minina para ser membro de uma sociedade limitada; sociedade entre...</p>
+					<!-- PLAYER PODCAST -->
+					<embed
+					src="<?= base_url()?>site/podcast/podcast.swf"
+					width="230"
+					height="24"
+					flashvars="playerID=1&amp;bg=0xD0EBEA&amp;leftbg=0x01B8C0&amp;lefticon=0xFFFFFF&amp;rightbg=0x00CCC8&amp;righticon=0xFFFFFF&amp;
+					soundFile=podcast/audio.mp3"
+					/>
+					</embed>
+					<a href="#"><img id="comentar" src="<?= base_url()?>site/img/podcastComentar.gif" alt="Comentar" /></a>
+					<a href="#"><img src="<?= base_url()?>site/img/podcastIndicar.gif" alt="Indicar" /></a>
+				</li>
+				<li>
+					<p><b>Direito trabalhista e previdenci?rio</b> - idade minina para ser membro de uma sociedade limitada; sociedade entre...</p>
+					<!-- PLAYER PODCAST -->
+					<embed
+					src="<?= base_url()?>site/podcast/podcast.swf"
+					width="230"
+					height="24"
+					flashvars="playerID=1&amp;bg=0xD0EBEA&amp;leftbg=0x01B8C0&amp;lefticon=0xFFFFFF&amp;rightbg=0x00CCC8&amp;righticon=0xFFFFFF&amp;
+					soundFile=podcast/audio.mp3"
+					/>
+					</embed>
+					<a href="#"><img id="comentar" src="<?= base_url()?>site/img/podcastComentar.gif" alt="Comentar" /></a>
+					<a href="#"><img src="<?= base_url()?>site/img/podcastIndicar.gif" alt="Indicar" /></a>
+				</li>
+				<li>
+					<p><b>Direito Societ?rio</b> - idade minina para ser membro de uma sociedade limitada; sociedade entre...</p>
+					<!-- PLAYER PODCAST -->
+					<embed
+					src="<?= base_url()?>site/podcast/podcast.swf"
+					width="230"
+					height="24"
+					flashvars="playerID=1&amp;bg=0xD0EBEA&amp;leftbg=0x01B8C0&amp;lefticon=0xFFFFFF&amp;rightbg=0x00CCC8&amp;righticon=0xFFFFFF&amp;
+					soundFile=podcast/audio.mp3"
+					/>
+					</embed>
+					<a href="#"><img id="comentar" src="<?= base_url()?>site/img/podcastComentar.gif" alt="Comentar" /></a>
+					<a href="#"><img src="<?= base_url()?>site/img/podcastIndicar.gif" alt="Indicar" /></a>
+				</li>
+			</ul>
+			<div id="divMais">
+				<a class="dir" href="#">Mais podcastings (+)</a>
+			</div>
+		</div>
+		
+		
+		</div>
+		</div>
+</div>
+
+<?php include("final.inc.php"); ?>

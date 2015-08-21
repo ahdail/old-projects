@@ -1,0 +1,13 @@
+<?php
+    //$DBCONF["as400_ibase"]["db"] = "128.1.1.11:/opt/interbase/data/GUANA_AS400.GDB";
+    //$DBCONF["as400_ibase"]["user"] = "sysdba";
+    //$DBCONF["as400_ibase"]["pw"]   = "masterkey";
+
+    $DBCONF["host"] = "localhost";
+    $DBCONF["user"] = "site";
+    $DBCONF["pw"]   = "idcphone=3";
+    $DBCONF["db"]   = "CLASSE";
+
+    include "inc/database.inc.php";
+    include "inc/_mysql.inc.php";
+?>

@@ -1,0 +1,282 @@
+/* PÁGINA */
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%
+}
+.msgErro {
+	color: #A40000;
+	padding: 0 0 0 15px;
+	font-size: 12px;
+	background-color: #FAE6E4;
+	border: 1px solid #AA0000;
+}
+.msgOk {
+	color: #A40000;
+	padding: 10px 0 10px 15px;
+	font-size: 12px;
+	background-color: #F5F5F5;
+}
+body {
+	background: url("../img/fundo.gif");
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#gog {
+	margin: 0 auto;
+	width: 978px;
+	background: #FFFFFF;
+	border-left: 10px solid #72706F;
+	border-right: 10px solid #72706F;
+}
+/* /P�GINA */
+
+/* TAGs */
+h1 {	/* T�tulo geral do "blog". Aquele que tem um degrad� de fundo */
+	margin: 0;
+	padding: 5px 10px;
+	font-size: 13px;
+	color: #333333;
+	background: url("../img/h1.gif") repeat-x;
+}
+h2 {	/* T�tulo das se��es tipo "Agenda" "Indicadores" "Newsletter"... */
+	margin: 10px 0;
+	margin-bottom: 5px;
+	padding: 0;
+	padding-left: 15px;
+	font-size: 12px;
+	font-weight: normal;
+	color: #151515;
+	background: url("../img/h2.gif") no-repeat left;
+}
+h3 {	/* T�tulo vermelho dos diretores */
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #A40000;
+}
+p {
+	font-size: 12px;
+	color: #333333;
+}
+p.peq {
+	font-size: 10px;
+}
+p.gnd {
+	font-size: 14px;
+}
+p span.vermelho {
+	font-weight: bold;
+	color: #9B231C;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a.mais {
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+}
+a.preto {
+	color: #151515;
+}
+form {
+	display: table;
+	margin: 0;
+	padding: 0;
+}
+form label {
+	display: inline;
+	font-size: 10px;
+	color: #666666;
+}
+form #input {
+	background: url("../img/inputEsq.gif") no-repeat left;
+}
+form #input span {
+	display: table;
+	padding: 0 7px;
+	background: url("../img/inputDir.gif") no-repeat right;
+	
+}
+form #input input {
+	margin: 0;
+	height: 18px;
+	font-size: 12px;
+	background: url("../img/input.gif") repeat-x;
+	border: none;
+	color:#A40000;
+}
+img {
+	border: none;
+}
+/* /TAGs */
+
+/* TOPO */
+#topo {
+	margin: 0 -10px; /* Por causa das bordas laterais espec�ficas do TOPO */
+	_margin: 0; /* Para o iE6 */
+	width: 100%;
+	height: 108px;
+	background: url("../img/topoFundo.gif") no-repeat;
+	border-left: 10px solid #4D4948;
+	border-right: 10px solid #4D4948;
+	_border: none;
+}
+#topoBase {
+	margin: 0 -10px; /* Por causa das bordas laterais específicas da BASE DO TOPO */
+	_margin: 0;
+	width: 100%;
+	height: 10px;
+	background: #DA251D;
+	border-left: 10px solid #605D5C;
+	border-right: 10px solid #605D5C;
+	_border: none;
+}
+/* /TOPO */
+
+/* MENU */
+#menu {
+	float: left;
+	margin-top: 15px;
+	margin-right: -3px;
+	padding-left: 15px;
+	width: 150px; /* 165 - 15 por causa do padding */
+	border-right: 3px solid #CACACA;
+}
+#menu ul {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	list-style: none;
+}
+#menu ul li {
+	line-height: 24px;
+}
+#menu a {
+	color: #151515;
+}
+#menu a.clicado {
+	color: #A40000;
+}
+#menu h2 {
+	color: #81807F;
+}
+/* /MENU */
+
+/* CONTEUDO */
+#conteudo {
+	float: left;
+	margin-top: 15px;
+	padding: 0 15px;
+	width: 602px; /* 640 - 6 por causa das bordas dos lados e -30 por causa do padding */
+	min-height: 580px;
+	border-left: 3px solid #CACACA;
+	border-right: 3px solid #CACACA;
+}
+#conteudo p {
+	line-height: 20px;
+}
+/* CONTEUDO > TIRA DA ESQUERDA */
+#tiraEsq {
+	float: left;
+	padding-right: 15px;
+	width: 344px; /* 374 - 20 por causa do padding */
+	min-height: 580px;
+	border-right: 3px solid #CACACA;
+}
+/* CONTEUDO > TIRA DA DIREITA */
+#tiraDir {
+	float: right;
+	margin-left: -3px;
+	padding-left: 15px;
+	width: 225px; /* 255 - 30 por causa do padding */
+	min-height: 580px;
+	background: url("img/cicloFundo.gif") repeat-x top;
+	border-left: 3px solid #CACACA;
+}
+#tiraDir p span {
+	font-weight: bold;
+	color: #9B231C;
+}
+#tiraDir select {
+	width: 110px;
+}
+#tiraDir #banner {
+	position: relative;
+	margin-right: -16px;
+	left: -8px; /* Compensa o padding e deixa +- centralizado, levando em conta que o banner ter� 240px de largura */
+}
+/* /CONTEUDO */
+
+/* COLUNA DIREITA */
+#direita {
+	float: right;
+	margin-top: 8px;
+	padding-left: 15px;
+	width: 160px; /* 175 - 15 por causa do padding */
+}
+#direita #calendario {
+	padding-top: 10px;
+}
+#direita .camposNewsletter {
+	margin-left: 40px;
+}
+#camposFormulario{
+	margin-left: 40px;
+}
+#direita label.info {
+	font-size: 9px;
+}
+/* /COLUNA DIREITA */
+
+/* BASE */
+#base {
+	clear: both; /* Faz com que a formata��o da GOG seja "puxada" at� o fim */
+}
+#base #master {
+	float: left;
+	margin-right: 20px;
+	width: 165px;
+	height: 150px;
+	border-right: 3px solid #CACACA;
+}
+#base #logos {
+	float: right;
+	margin-top: 20px;
+	padding: 20px 0;
+	width: 790px;
+	border-top: 3px solid #CACACA;
+}
+#base #logos img,embed {
+	margin-right: 18px;
+}
+/* /BASE */
+
+/* EXTRA */
+.meio {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+.esq {
+	float: left;
+}
+.dir {
+	float: right;
+}
+select { 
+	background-color: #FAE6E4;
+	font:12px verdana, arial, helvetica, sans-serif;
+	color:#A40000;
+	border: 1px solid #CCCCCC;
+}
+textarea { 
+	background-color: #FAE6E4;
+	font:12px verdana, arial, helvetica, sans-serif;
+	color:#A40000;
+	border: 1px solid #CCCCCC;
+}
+/* /EXTRA */

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/cic/!svn/ver/15/trunk/site/language/english
+END
+number_lang.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cic/!svn/ver/4/trunk/site/language/english/number_lang.php
+END
+calendar_lang.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cic/!svn/ver/4/trunk/site/language/english/calendar_lang.php
+END
+ftp_lang.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/cic/!svn/ver/4/trunk/site/language/english/ftp_lang.php
+END
+validation_lang.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cic/!svn/ver/4/trunk/site/language/english/validation_lang.php
+END
+date_lang.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/cic/!svn/ver/4/trunk/site/language/english/date_lang.php
+END
+form_validation_lang.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/cic/!svn/ver/15/trunk/site/language/english/form_validation_lang.php
+END
+unit_test_lang.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/cic/!svn/ver/4/trunk/site/language/english/unit_test_lang.php
+END
+scaffolding_lang.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cic/!svn/ver/4/trunk/site/language/english/scaffolding_lang.php
+END
+profiler_lang.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/cic/!svn/ver/4/trunk/site/language/english/profiler_lang.php
+END
+imglib_lang.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cic/!svn/ver/4/trunk/site/language/english/imglib_lang.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/cic/!svn/ver/4/trunk/site/language/english/index.html
+END
+upload_lang.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cic/!svn/ver/4/trunk/site/language/english/upload_lang.php
+END
+db_lang.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/cic/!svn/ver/4/trunk/site/language/english/db_lang.php
+END
+email_lang.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/cic/!svn/ver/4/trunk/site/language/english/email_lang.php
+END

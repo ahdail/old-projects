@@ -1,0 +1,550 @@
+/* INÍCIO DE FORMATAÇÃO DA PÁGINA */
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%
+}
+body {
+	background: #F9F9F9;
+	font-family: Verdana, Arial, Helvetica, sans-serif;	
+}
+#divGog {
+	margin: 0 auto;
+	width: 977px;
+	background: url("../img/corpoSombraBase.gif") repeat-x bottom;
+	background-color: #FFFFFF;
+	border-left: 3px solid #F3F3F3;
+	border-right: 3px solid #F3F3F3;
+}
+#divCorpo {
+	float: left;
+	width: 770px;
+	border-right: 3px solid #F3F3F3;
+}
+
+/* BANNER TOPO */
+#divBannerTopo {
+	margin-bottom: 5px;
+	padding: 0;
+	height: 94px;
+}
+
+/* TOPO */
+#divTopo {
+	padding: 0;
+	padding-bottom: 10px;
+	height: 80px;
+}
+#divTopo #logo {
+	float: left;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+/* TOPO > Cabeçalho */
+#divTopo #divCabecalho {
+	float: right;
+	margin-top: 3px;
+	width: 570px;
+}
+/* TOPO > Cabeçalho > Menu superior */
+#divTopo ul#menu  {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-size: 9px;
+	text-transform: uppercase; 
+	text-align: center;
+	list-style: none;
+	background: #00A38C;
+}
+#divTopo ul#menu li {
+	float: left;
+	padding-top: 5px;
+	width: 24.9%;
+	height: 18px;
+	background: #008D79;
+}
+#divTopo ul#menu li.claro {
+	background: #00A38C;
+}
+#divTopo ul#menu li a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#divTopo ul#menu li a:hover {
+	text-decoration: underline;
+}
+/* TOPO > Cabeçalho > Login */
+#divTopo form#login {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 345px;
+	height: 31px;
+	vertical-align: middle;
+	background: url("../img/topoBuscarEsq.gif") no-repeat left;
+	background-color: #EAEAEA;
+	border-top: 5px solid #FFFFFF;
+}
+#divTopo form#login p {
+	margin: 0;
+	margin-left: 9px;
+	padding-top: 4px;
+	font-size: 11px;
+	color: #014778;
+}
+#divTopo form#login p * {
+	display: inline;
+	vertical-align: middle;
+}
+#divTopo form#login #campoUsuario {
+	margin: 0 5px;
+	width: 105px;
+	color: #BBBBBB;
+	border: 1px solid #B5B5B5;
+}
+#divTopo form#login #campoUsuario:focus {
+	color: #6F6D6D;
+}
+#divTopo form#login #campoSenha {
+	margin: 0;
+	width: 65px;
+	color: #BBBBBB;
+	border: 1px solid #B5B5B5;
+}
+#divTopo form#login #campoSenha:focus {
+	color: #6F6D6D;
+}
+#divTopo form#login #botEntrar {
+	margin: 0 5px;
+	color: #6F6D6D;	
+	background: #FFFFFF;
+	border: none;
+}
+/* TOPO > Cabeçalho > Buscar */
+#divTopo form#buscar {
+	float: right;
+	margin: 0;
+	padding: 0;
+	width: 220px;
+	height: 31px;
+	vertical-align: middle;
+	background: url("../img/topoBuscarEsq.gif") no-repeat left;
+	background-color: #EAEAEA;
+	border-top: 5px solid #FFFFFF;
+}
+#divTopo form#buscar p {
+	margin: 0;
+	margin-left: 9px;
+	padding-top: 4px;
+	font-size: 11px;
+	color: #014778;
+}
+#divTopo form#buscar p * {
+	display: inline;
+	vertical-align: middle;
+}
+#divTopo form#buscar #campoPalavra {
+	margin: 0 5px;
+	width: 105px;
+	color: #6F6D6D;
+	border: 1px solid #B5B5B5;
+}
+#divTopo form#buscar #campoDrop {
+	width: 130px;
+	color: #6F6D6D;
+	border: 1px solid #B5B5B5;
+}
+#divTopo form#buscar #campoDrop option {
+	display: block;
+}
+#divTopo form#buscar #botBuscar {
+	color: #6F6D6D;	
+	background: #FFFFFF;
+	border: none;
+}
+/* TOPO > Cabeçalho > Menu rápido */
+#divTopo ul#menuRapido  {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-size: 9px;
+	list-style: none;
+}
+#divTopo ul#menuRapido li {
+	float: left;
+	padding-top: 5px;
+	padding-left: 20px;
+	height: 18px;
+}
+#divTopo ul#menuRapido li#meuclasse {
+	width: 70px;
+	background: url("../img/meuclasse.gif") no-repeat left;
+}
+#divTopo ul#menuRapido li#cadastrese {
+	width: 75px;
+	background: url("../img/cadastrese.gif") no-repeat left;
+}
+#divTopo ul#menuRapido li#esquecisenha {
+	width: 120px;
+	background: url("../img/esquecisenha.gif") no-repeat left;
+}
+#divTopo ul#menuRapido li#twitter {
+	width: 110px;
+	background: url("../img/twitter.gif") no-repeat left;
+}
+#divTopo ul#menuRapido li#orkut {
+	background: url("../img/orkut.gif") no-repeat left;
+}
+#divTopo ul#menuRapido li#rss {
+	float: right;
+	margin-right: 0;
+	background: url("../img/rss.gif") no-repeat left;
+}
+#divTopo ul#menuRapido li a {
+	text-decoration: none;
+	color: #6F6D6D;
+}
+#divTopo ul#menuRapido li a:hover {
+	text-decoration: underline;
+}
+/* /TOPO */
+
+/* LOGIN */
+#divLogin {
+	position: relative;
+	margin-bottom: 10px;
+	padding: 0;
+	height: 20px;
+	z-index: 500;
+	background: url("../img/topoBaseAberto.gif") no-repeat;
+}
+#divLogin p {
+	margin: 0;
+	padding-top: 5px;
+	padding-right: 10px;
+	font-size: 10px;
+	text-align: right;
+	color: #008D79;
+}
+#divLogin a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #008D79;
+}
+#divLogin a:hover {
+	text-decoration: underline;
+}
+/* /LOGIN */
+
+/* MENU */
+#divMenu {
+	float: left;
+	margin-top: -20px;
+	padding-top: 20px;
+	width: 127px;
+	background: url("../img/menuFundo.gif") repeat-y;
+	/* background: #F6FFFE; */
+}
+#divMenu ul {
+	margin: 0;
+	padding: 0 13px;
+	padding-bottom: 25px;
+	list-style: none;
+	background: url("../img/menuFundoBase.gif") no-repeat bottom;
+}
+#divMenu li h1 {
+	margin: 5px 0;
+	padding: 0;
+	font-size: 14px;
+	font-weight: bold;
+	color: #00497A;
+}
+#divMenu ul ul {
+	margin: 0;
+	padding: 0;
+	background: url("../img/pontilhadoh.gif") repeat-x top;
+}
+#divMenu li li {
+	padding: 3px 0;
+	background: url("../img/pontilhadoh.gif") repeat-x bottom;
+}
+#divMenu li li a {
+	display: block;
+	margin: 0;
+	*margin-top: -6px; /* Somente para o IE7 */
+	padding: 0;
+	font-size: 10px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #666666;
+}
+#divMenu li li a:hover {
+	color: #000000;
+	background: #F5F5F5;
+}
+/* /MENU */
+
+/* LOJA */
+#divLoja {
+	float: right;
+	width: 192px;
+}
+#divLoja #titulo {
+	margin-top: 10px;
+}
+#divLoja ul {
+	margin: 0;
+	padding: 0;
+	font-size: 9px;
+	list-style: none;
+}
+#divLoja ul a {
+	text-decoration: none;
+	color: #333333;
+}
+#divLoja ul a:hover {
+	text-decoration: underline;
+}
+#divLoja ul li {
+	height: 93px;
+	border-top: 1px solid #D1D1D1;
+}
+#divLoja ul li img {
+	float: left;
+	margin-top: 8px;
+	border: 0;
+}
+#divLoja ul li p {
+	margin-top: 14px;
+	margin-left: 60px;
+	margin-right: 10px;
+	font-size: 9px;
+	color: #666666;
+}
+#divLoja ul li p span {
+	font-weight: bold;
+	color: #49A476;
+}
+#divLoja ul #divAcesse {
+	padding: 5px 0;
+	background: #E5E5E5;
+}
+#divLoja ul #divAcesse a {
+	display: block;
+	margin-left: 10px;
+}
+#divLoja h1 {
+	margin: 10px 0;
+	padding-top: 4px;
+	padding-left: 12px;
+	height: 25px; /* 29 - 4 */
+	font-size: 15px;
+	color: #FFFFFF;
+}
+/* LOJA > Maiores informaï¿½ï¿½es, barrinha cinza com a fonte, etc */
+#divLoja #divOutras {
+	padding: 5px 0;
+	font-size: 9px;
+	text-align: left;
+	background: #EAEAEA;
+}
+#divLoja #divOutras a {
+	display: block;
+	margin-left: 10px;
+	padding: 2px;
+	text-decoration: none;
+	color: #008C79;
+}
+#divLoja #divOutras a:hover {
+	text-decoration: underline;
+}
+/* LOJA > Calendï¿½rio */
+#divLoja #divCalendario {
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+}
+#divLoja #divCalendario h1 {
+	text-align: left;
+	background: url("../img/tituloFundoCinza.gif") repeat-x;
+}
+/* LOJA > Enquete */ 
+#divLoja #divEnquete h1 {
+	background: url("../img/tituloFundoCinza.gif") repeat-x;
+}
+#divLoja #divEnquete p {
+	margin: 0;
+	padding-left: 12px;
+	font-size: 11px;
+	color: #666666;
+}
+#divLoja #divEnquete a {
+	text-decoration: none;
+	color: #666666;
+}
+#divLoja #divEnquete a:hover {
+	text-decoration: underline;
+}
+#divLoja #divEnquete form {
+	margin: 10px 0;
+	margin-left: 10px;
+	padding: 0;
+	font-size: 11px;
+	color: #666666;
+}
+#divLoja #divEnquete form input {
+	margin: 0;
+	margin-right: 3px;
+	padding: 0;
+	_width: 15px;
+	_height: 15px;
+	vertical-align: middle;
+}
+/* LOJA > Indicadores */
+#divLoja #divIndicadores h1 {
+	background: url("../img/tituloFundoCinza.gif") repeat-x;
+}
+#divLoja #divIndicadores #divInterfisco {
+	margin-top: 10px;
+	padding: 4px 0;
+	background: #E5E5E5;
+}
+#divLoja #divIndicadores p {
+	margin: 0;
+	margin-left: 10px;
+	font-size: 11px;
+	color: #666666;
+}
+#divLoja #divIndicadores dl {
+	display: table;
+	margin: 0;
+	margin-left: 10px;
+	width: 90%;
+	font-size: 11px;
+	color: #666666;
+}
+#divLoja #divIndicadores dl dt {
+	float: left;
+	display: block;
+}
+#divLoja #divIndicadores dl dd {
+	display: block;
+	text-align: right;
+}
+#divLoja #divIndicadores p a {
+	color: #00497A;
+	text-decoration: none;
+}
+#divLoja #divIndicadores p a:hover {
+	text-decoration: underline;
+}
+#divLoja table#indexadores {
+	margin-bottom: 8px;
+	width: 95%;
+	border-collapse: collapse;
+}
+#divLoja table#indexadores td {
+	border: 1px solid #DEDEDE;
+}
+/* LOJA > Vagas */
+#divLoja #divVagas h1 {
+	background: url("../img/tituloFundoCinza.gif") repeat-x;
+}
+#divLoja #divVagas a {
+	display: block;
+	margin-left: 10px;
+	font-size: 11px;
+	text-decoration: none;
+	color: #666666;
+}
+#divLoja #divVagas a:hover {
+	text-decoration: underline;
+}
+#divLoja #divVagas #divOutras {
+	margin-top: 10px;
+	padding: 4px 0;
+	background: #E5E5E5;
+}
+#divLoja #divVagas #divOutras a {
+	display: block;
+	margin-left: 10px;
+	color: #008C79;
+}
+#divLoja #divBanner {
+	margin: 10px 0;
+	text-align: center;
+}
+/* /LOJA */
+
+/* CREDITOS */
+#divCreditos {
+	clear: both;
+	padding: 20px 0;
+	width: 100%;
+	font-size: 10px;
+	text-align: center;
+	color: #FFFFFF;
+	background: url("../img/creditosFundoTopo.gif") repeat-x top;
+	background-color: #01A38C;
+}
+#divCreditos a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#divCreditos a:hover {
+	text-decoration: underline;
+}
+#divCreditos ul {
+	margin: 0;
+	padding: 0;
+	color: #00FFDB;
+}
+#divCreditos ul li {
+	display: inline;
+}
+#divCreditos img {
+	border: 0;
+}
+/* /CREDITOS */
+
+/* CLASSES */
+.esq {
+	float: left;
+}
+.meio {
+	margin: 0 auto;
+}
+.centro {
+	text-align: center;
+}
+.dir {
+	float: right;
+}
+.verde {
+	color: #008C79;
+}
+/* QUANDO IMPRIMIR */
+@media print {
+	#divBannerTopo, #divCabecalho, #divMenu, #divLoja, #divCreditos, #divLogin,
+	#opcoes, 
+	.relacionados {
+		display: none;
+	}
+	#divCorpo {
+		width: 100%;
+		border: none;
+	}
+	#divGog {
+		width: 100%;
+		border: none;
+	}
+	#divConteudo {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		border: none;
+	}
+}
+/* /QUANDO IMPRIMIR */

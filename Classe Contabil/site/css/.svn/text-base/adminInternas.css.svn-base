@@ -1,0 +1,201 @@
+body { 
+	margin: 2px;
+	padding: 2px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center; /* Para o iE centralizar a FORM */
+	background: #FFFFFF;
+}
+form {
+	margin: 0 auto; /* Para o FF centralizar a FORM */
+	width: 700px;
+	font-size: 10pt;
+	text-align: left;
+	background: #FFFFFF;
+	border: 3px solid #D1EEEA;
+}
+form h1 {
+	margin: 0;
+	padding: 10px 0;
+	font-size: 12px;
+	text-align: center;
+	color: #008D79;
+	background: url("../img/admin/tituloFundo.jpg");
+}
+form ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+form ul li {
+	padding: 4px 0;
+	color: #008D79;
+	border-top: 1px solid #D1EEEA;
+}
+form label {
+	float: left;
+	width: 150px;
+	padding-left: 10px;
+	padding-top: 3px;
+	color: #008D79;
+}
+
+form label span {
+	color: #FF0000;
+}
+form textarea.campo {
+	height: 200px;
+	padding: 2px;
+	width: 680px;
+	background: #FDFDFD;
+	border: 1px solid #DDDDDD;
+	margin: 10px;
+}
+form textarea.campo:focus {
+	background: #FFFAAA;
+}
+form input.campo {
+	height: 24px;
+	padding: 2px;
+	width: 300px;
+	background: #FDFDFD;
+	border: 1px solid #DDDDDD;
+}
+form input.campo:focus {
+	background: #FFFAAA;
+}
+form input.campoGd {
+	height: 24px;
+	padding: 2px;
+	width: 500px;
+	background: #FDFDFD;
+	border: 1px solid #DDDDDD;
+}
+form input.campoGd:focus {
+	background: #FFFAAA;
+}
+form input.campoPeq {
+	height: 24px;
+	padding: 2px;
+	width: 100px;
+	background: #FDFDFD;
+	border: 1px solid #DDDDDD;
+}
+form input.campoPeq:focus {
+	background: #FFFAAA;
+}
+form input.botao {
+	margin: 5px 0;
+	height: 22px;
+	font-size: 10pt;
+	color: #555555;
+	border: 1px solid #555555;
+	background: #F0F0F0;
+}
+form select {
+	background: #FDFDFD;
+	border: 1px solid #DDDDDD;
+}
+form.limpa {
+	margin: 0 auto;
+	width: auto;
+	font-size: inherit;
+	text-align: left;
+	background: none;
+	border: none;
+}
+form.limpa h1 {
+	margin: 0;
+	padding: 0;
+	font-size: inherit;
+	text-align: left;
+	color: inherit;
+	background: none;
+	border: none;
+}
+table.listar {
+	margin: 0 auto;
+	padding: 0;
+	width: 700px;
+	font-size: 12px;
+	background: #FFFFFF;
+	border: 3px solid #D1EEEA;
+}
+table.listar tr.titulo td {
+	padding: 10px;
+	font-weight: bold;
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #008D79;
+	background: url("../img/admin/tituloFundo.jpg");
+}
+table.listar tr td {
+	padding: 3px 10px;
+	color: #666666;
+	border-top: 1px solid #D1EEEA;
+}
+table.listar tr td.acoes {
+	width: 50px;
+}
+.msgErro {
+	/* display: none; */
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 20px;
+	width: 700px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	color: #AA0000;
+	border: 3px solid #AA0000;
+	background-color: #FFF6F7;
+}
+.msgOk {
+	/* display: none; */
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 20px;
+	width: 700px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	color: #000066;
+	border: 3px solid #336600;
+	background-color: #ECFBC4;
+}
+/* CONTEUDO > Listagens de todas as notícias, artigos etc. */
+ul.listagem {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul.listagem li {
+	padding: 4px 3px;
+	border-bottom: 1px solid #E0E0E0;
+}
+ul.listagem li h1 {
+	margin: 5px 0;
+	font-size: 13px;
+	font-weight: bold;
+}
+ul.listagem li p {
+	margin: 0;
+}
+ul.listagem li p.data {
+	float: right;
+	margin-left: 10px;
+	font-size: 11px;
+	font-weight: normal;
+	text-align: right;
+	color: #B0B0B0;
+}
+ul.listagem li h1 a {
+	text-decoration: none;
+	color: #03497A;
+}
+ul.listagem li p a {
+	text-decoration: none;
+	color: #464646;
+}
+ul.listagem li a:hover {
+	text-decoration: underline;
+}

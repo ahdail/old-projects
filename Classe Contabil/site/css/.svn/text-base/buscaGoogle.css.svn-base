@@ -1,0 +1,49 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #333333;
+	line-height: 20px;
+}
+
+a {
+	color: #03497A;
+}
+
+a:hover {
+	color: #000000;
+}
+
+.l {
+	color: #03497A;
+}
+
+.g {
+	padding-top: 4px;
+	padding-top: 2px;
+}
+
+.r {
+	font-size: 14px;
+}
+
+.std {
+	font-size: 11px;
+	line-height: 20px;
+}
+
+.std em {
+	font-weight:bold;
+}
+
+.n table { 
+	font-size: 12px;
+}
+
+.i {
+	color: #03497A;
+}
+
+#ofr {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+}

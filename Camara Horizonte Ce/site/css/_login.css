@@ -1,0 +1,67 @@
+/* PÁGINA */
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%
+}
+body {
+	background: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#login {
+	margin: 40px auto;
+	width: 346px;
+	height: 154px;
+	background: url("../img/loginFundo.jpg");
+}
+.msgErro {
+	color: #A40000;
+	padding: 10px 0 10px 15px;
+	font-size: 12px;
+	background-color: #FAE6E4;
+}
+/* /PÁGINA */
+
+/* FORMULÁRIO */
+form {
+	position: relative;
+	top: 50px;
+	left: 17px;
+	width: 210px;
+}
+label {
+	float: left;
+	display: block;
+	margin: 3px 0;
+	width: 62px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #E4BEBB;
+}
+input {
+	margin: 3px 0;
+	height: 18px;
+	background: #E4BEBB;
+	border: 2px solid #831C15;
+}
+input#entrar {
+	float: right;
+	width: 46px;
+	height: 24px;
+	border: none;
+}
+/* /FORMULÁRIO */
+
+/* EXTRA */
+.meio {
+	display: block;
+	margin: 0 auto;
+}
+.esq {
+	float: left;
+}
+.dir {
+	float: right;
+}
+/* /EXTRA */

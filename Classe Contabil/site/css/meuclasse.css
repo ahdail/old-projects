@@ -1,0 +1,43 @@
+.abas {
+	width: 620px;
+}
+.abas ul.nomeAbas {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	list-style: none;
+}
+.abas ul.nomeAbas li {
+	float: left;
+	display: block;
+	margin-bottom: -1px;
+	margin-right: 5px;
+	border: 1px solid #AAAAAA;
+	border-bottom: none;
+}
+.abas ul.nomeAbas li a {
+	display: block;
+	padding: 2px 5px;
+	width: 100px;
+	font-size: 11px;
+	text-align: center;
+	text-decoration: none;
+	background: #F0F0F0;
+}
+.abas .aba_conteudo {
+	display: none;
+	padding: 15px;
+	border: 1px solid #AAAAAA;
+	background: #FFFFFF;
+}
+.abas #abaA {
+	background: #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+}
+.abas #A {
+	display: block;
+}
+.matafloat {
+	clear: both;
+}

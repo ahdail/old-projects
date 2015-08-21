@@ -1,0 +1,64 @@
+[09-Mar-2012 18:54:19] PHP Fatal error:  Call to a member function row_array() on a non-object in /home/chorozin/public_html/site/application/models/admin/videosmodel.php on line 30
+[09-Mar-2012 18:55:01] PHP Fatal error:  Call to a member function row_array() on a non-object in /home/chorozin/public_html/site/application/models/admin/videosmodel.php on line 30
+[11-Apr-2012 12:49:07] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/chorozin/public_html/site/application/views/admin/inicio.inc.php on line 1
+[11-Apr-2012 12:52:13] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/chorozin/public_html/site/application/views/admin/inicio.inc.php on line 1
+[11-Apr-2012 13:42:53] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/chorozin/public_html/site/application/controllers/admin/noticia.php on line 73
+[11-Apr-2012 14:44:11] PHP Fatal error:  Call to undefined function  validation_errors() in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 37
+[11-Apr-2012 14:52:35] PHP Fatal error:  Call to a member function secretarias() on a non-object in /home/chorozin/public_html/site/application/controllers/admin/pagina.php on line 20
+[11-Apr-2012 14:53:24] PHP Fatal error:  Call to a member function secretarias() on a non-object in /home/chorozin/public_html/site/application/controllers/admin/pagina.php on line 20
+[11-Apr-2012 15:27:09] PHP Parse error:  syntax error, unexpected '{' in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 103
+[11-Apr-2012 16:05:03] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting '(' in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 111
+[11-Apr-2012 16:05:30] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting '(' in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 109
+[11-Apr-2012 18:28:40] PHP Fatal error:  Call to a member function secretarias() on a non-object in /home/chorozin/public_html/site/application/controllers/admin/login.php on line 29
+[11-Apr-2012 18:58:29] PHP Parse error:  syntax error, unexpected T_IS_EQUAL, expecting ')' in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 106
+[11-Apr-2012 19:16:54] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 99
+[11-Apr-2012 19:17:32] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 99
+[11-Apr-2012 19:17:59] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 99
+[11-Apr-2012 19:18:16] PHP Parse error:  syntax error, unexpected '/' in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 99
+[11-Apr-2012 19:18:56] PHP Parse error:  syntax error, unexpected '/' in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 99
+[11-Apr-2012 19:19:13] PHP Parse error:  syntax error, unexpected T_STRING in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 102
+[11-Apr-2012 19:20:48] PHP Parse error:  syntax error, unexpected '/' in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 99
+[11-Apr-2012 19:22:40] PHP Parse error:  syntax error, unexpected '/' in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 103
+[11-Apr-2012 22:58:58] PHP Parse error:  syntax error, unexpected '}' in /home/chorozin/public_html/site/application/controllers/admin/noticia.php on line 123
+[12-Apr-2012 08:31:12] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/chorozin/public_html/site/application/models/admin/noticiamodel.php on line 56
+[12-Apr-2012 08:31:57] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/chorozin/public_html/site/application/models/admin/noticiamodel.php on line 56
+[12-Apr-2012 08:32:01] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/chorozin/public_html/site/application/models/admin/noticiamodel.php on line 56
+[12-Apr-2012 08:32:23] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/chorozin/public_html/site/application/models/admin/noticiamodel.php on line 56
+[12-Apr-2012 11:23:47] PHP Fatal error:  Call to a member function row_array() on a non-object in /home/chorozin/public_html/site/application/models/admin/secretariasmodel.php on line 14
+[12-Apr-2012 12:32:02] PHP Parse error:  syntax error, unexpected T_STRING, expecting ']' in /home/chorozin/public_html/site/application/views/inicio.inc.php on line 94
+[12-Apr-2012 12:34:24] PHP Parse error:  syntax error, unexpected '}' in /home/chorozin/public_html/site/application/views/inicio.inc.php on line 100
+[12-Apr-2012 13:24:56] PHP Fatal error:  Call to undefined method SecretariasModel::noticias_secretaria() in /home/chorozin/public_html/site/application/controllers/secretaria.php on line 22
+[12-Apr-2012 13:26:44] PHP Fatal error:  Call to undefined method SecretariasModel::noticias_secretaria() in /home/chorozin/public_html/site/application/controllers/secretaria.php on line 22
+[12-Apr-2012 13:36:48] PHP Fatal error:  Call to undefined function  sqltodate() in /home/chorozin/public_html/site/application/views/secretaria.php on line 44
+[12-Apr-2012 14:45:12] PHP Fatal error:  Call to a member function row_array() on a non-object in /home/chorozin/public_html/site/application/models/admin/videosmodel.php on line 5
+[12-Apr-2012 14:59:42] PHP Fatal error:  Call to a member function insert() on a non-object in /home/chorozin/public_html/site/application/controllers/admin/videos.php on line 98
+[12-Apr-2012 18:38:30] PHP Fatal error:  Call to undefined method EventosModel::album_todos() in /home/chorozin/public_html/site/application/controllers/admin/pagina.php on line 34
+[12-Apr-2012 18:39:12] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/chorozin/public_html/site/application/models/admin/albummodel.php on line 29
+[12-Apr-2012 18:39:16] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/chorozin/public_html/site/application/models/admin/albummodel.php on line 29
+[12-Apr-2012 18:45:48] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/chorozin/public_html/site/application/models/admin/albummodel.php on line 31
+[12-Apr-2012 18:46:23] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/chorozin/public_html/site/application/models/admin/albummodel.php on line 31
+[13-Apr-2012 10:07:40] PHP Fatal error:  Call to undefined function  sqltodate() in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 172
+[13-Apr-2012 10:08:17] PHP Fatal error:  Call to undefined function  sqltodate() in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 172
+[13-Apr-2012 10:09:23] PHP Fatal error:  Call to undefined function  sqltodate() in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 172
+[13-Apr-2012 10:10:18] PHP Fatal error:  Call to undefined function  sqltodate() in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 172
+[13-Apr-2012 10:11:51] PHP Fatal error:  Call to undefined function  sqltodate() in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 172
+[13-Apr-2012 10:14:33] PHP Fatal error:  Call to undefined function  sqltodate() in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 172
+[13-Apr-2012 10:16:15] PHP Fatal error:  Call to undefined function  sqltodate() in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 172
+[13-Apr-2012 10:17:44] PHP Fatal error:  Call to undefined function  sqltodate() in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 172
+[13-Apr-2012 10:20:32] PHP Fatal error:  Call to undefined function  sqltodate() in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 172
+[13-Apr-2012 10:21:39] PHP Fatal error:  Call to undefined function  sqltodate() in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 172
+[13-Apr-2012 10:22:36] PHP Fatal error:  Call to undefined function  sqltodate() in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 172
+[13-Apr-2012 10:23:43] PHP Fatal error:  Call to undefined function  sqltodate() in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 172
+[13-Apr-2012 10:25:50] PHP Fatal error:  Call to undefined function  sqltodate() in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 172
+[13-Apr-2012 23:16:46] PHP Fatal error:  Call to undefined function  sqltodate() in /home/chorozin/public_html/site/application/views/admin/noticia.php on line 195
+[14-Apr-2012 21:02:25] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/chorozin/public_html/site/application/controllers/admin/eventos.php on line 60
+[15-Apr-2012 13:32:36] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/chorozin/public_html/site/application/models/admin/noticiamodel.php on line 56
+[15-Apr-2012 13:32:49] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/chorozin/public_html/site/application/models/admin/noticiamodel.php on line 56
+[15-Apr-2012 13:33:34] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/chorozin/public_html/site/application/models/admin/noticiamodel.php on line 56
+[15-Apr-2012 15:49:36] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/chorozin/public_html/site/application/models/admin/secretariasmodel.php on line 52
+[16-Apr-2012 12:06:13] PHP Parse error:  syntax error, unexpected T_BOOLEAN_OR, expecting ')' in /home/chorozin/public_html/site/application/views/admin/fotos_album.php on line 174
+[16-Apr-2012 21:32:35] PHP Fatal error:  Call to undefined method VideosModel::album_destaque() in /home/chorozin/public_html/site/application/controllers/home.php on line 27
+[16-Apr-2012 21:33:57] PHP Fatal error:  Call to undefined method VideosModel::album_destaque() in /home/chorozin/public_html/site/application/controllers/home.php on line 27
+[17-Apr-2012 10:26:27] PHP Fatal error:  Call to a member function result_array() on a non-object in /home/chorozin/public_html/site/application/models/admin/bannermodel.php on line 31
+[17-Apr-2012 10:46:23] PHP Fatal error:  Call to a member function detalhar() on a non-object in /home/chorozin/public_html/site/application/controllers/admin/banner.php on line 25
+[17-Apr-2012 10:56:48] PHP Fatal error:  Call to a member function detalhar() on a non-object in /home/chorozin/public_html/site/application/controllers/admin/banner.php on line 25

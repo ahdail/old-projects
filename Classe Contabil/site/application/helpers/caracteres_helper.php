@@ -1,0 +1,18 @@
+<?php
+function retiraAcentuacao($str)
+{
+	$str = ereg_replace("[áàâãª]","a",$str);
+	$str = ereg_replace("[ÁÀÂÃ]","A",$str);
+	$str = ereg_replace("[éèê]","e",$str);
+	$str = ereg_replace("[ÉÈÊ]","E",$str);
+	$str = ereg_replace("[óòôõº]","o",$str);
+	$str = ereg_replace("[ÓÒÔÕ]","O",$str);
+	$str = ereg_replace("[úùû]","u",$str);
+	$str = ereg_replace("[ÚÙÛ]","U",$str);
+	$str = str_replace("ç","c",$str);
+	$str = str_replace("Ç","C",$str);
+	$str = ereg_replace(" ","",$str);
+	return $str;
+	
+}
+?>
